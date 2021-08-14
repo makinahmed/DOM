@@ -18,6 +18,31 @@ inputField.addEventListener('blur', function () {
 })
 
 
+
+
+inputField.addEventListener('keyup', function () {
+
+    if (inputField.value == 'delete') {
+        deleteBtn.removeAttribute('disabled')
+
+    }
+    else {
+        deleteBtn.setAttribute('disabled', true)
+    }
+
+})
+
+
+
+deleteBtn.addEventListener('click', function () {
+    deleteElement.style.display = 'none'
+    inputField.value = ''
+})
+
+
+// others practises of key events ;
+
+
 // keypress 
 
 
@@ -32,25 +57,3 @@ inputField.addEventListener('blur', function () {
 //     console.log(inputField.value);
 // })
 // keyup 
-
-
-// inputField.addEventListener('keyup', function () {
-   
-//     if (inputField.value == 'delete') {
-//         deleteBtn.removeAttribute('disabled')
-        
-//     }
-//     else {
-//         deleteBtn.setAttribute()
-//     }
-    
-// })
-
-
-
-// document.getElementById('delete-button').addEventListener('keyup', function (event) {
-//     if (event.target.value == '0') {
-//         console.log("Makin");
-//         document.getElementById('delete-button').removeAttribute('disabled');
-//     }
-// })
