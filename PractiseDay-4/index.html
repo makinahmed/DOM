@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <!-- title  -->
+    <h1>DOM Interactivity</h1>
+    <!-- change the color  -->
+
+    <button onclick="document.body.style.backgroundColor='#808000'">Click ME FOR RED</button>
+    <button onclick="makeGreen()">Click ME FOR GREEN</button>
+    <button id="makeHotPink">Click ME For TEAL</button>
+    <button id="makeBandor">Click ME FOR MAGENTA</button>
+
+    <br>
+    <br>
+    <br>
+    <!-- input  -->
+
+    <p id="paragraph"></p>
+    <label for="">Enter Your Text : </label>
+
+    <input id="input-text" type="text">
+    <br>
+    <br>
+    <br>
+    <button id="submitBtn">submit</button>
+
+
+    <!-- Post your comment  -->
+
+    <section id="comment-section">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos sit sed dolorum ullam vitae, soluta
+                voluptas doloremque unde asperiores, quisquam repellendus quibusdam magni aperiam tenetur numquam
+                quaerat exercitationem! Maxime?</p>
+            <p>Quaerat voluptatibus deserunt porro. Vel magnam quis qui fugit laboriosam a eaque, rem quaerat. Veritatis
+                nihil mollitia vero tempora, commodi facilis labore minima suscipit nemo animi nam, maxime, quia
+                delectus?</p>
+            <p>Nulla blanditiis repudiandae, recusandae adipisci corporis maiores deleniti voluptatum tempore esse?
+                Quidem fugit saepe aliquam suscipit modi animi dolor, excepturi magni vitae ea, deleniti eum at facere
+                placeat! Voluptatem, labore.</p>
+            <p id="post-comment"></p>
+        </div>
+        <br>
+
+    </section>
+
+
+    <section>
+        <h4>Drop Your Comment : </h4>
+        <br>
+        <textarea name="" id="new-comment" cols="50" rows="5"></textarea>
+        <br>
+        <br>
+        <button id="submit-comment">Post</button>
+    </section>
+
+    <!-- js  -->
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
